@@ -58,7 +58,7 @@ I am a data engineer at an e-commerce company. My task is to design a data platf
 - **Steps**:
   1. I used the `SHOW INDEX` command to list all indexes for the `sales_data` table.
      
-  ![indexes](https://github.com/nir25aj/ssad/blob/my-new-branch/Data_Engineering_Project/OLTP/listindexes.PNG"indexes")
+  ![indexes](https://github.com/nir25aj/ssad/blob/my-new-branch/Data_Engineering_Project/OLTP/listindexes.PNG "indexes")
 
 ### Task 8: Write a Bash Script to Export Data
 
