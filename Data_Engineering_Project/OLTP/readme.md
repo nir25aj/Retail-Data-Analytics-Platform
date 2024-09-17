@@ -36,14 +36,14 @@ I am a data engineer at an e-commerce company. My task is to design a data platf
 - **Objective**: List all the tables in the `sales` database.
 - **Steps**:
   1. I used the `SHOW TABLES` command to list all tables in the `sales` database.
-  2. A screenshot of the result has been saved as `tables.jpg`.
+  ![Tables](https://github.com/nir25aj/ssad/blob/my-new-branch/Data_Engineering_Project/OLTP/listtables.PNG "Tables")
 
 ### Task 5: Query to Count Records
 
 - **Objective**: Write a query to find out the count of records in the `sales_data` table.
 - **Steps**:
   1. I executed a `SELECT COUNT(*)` query to count the total records in the `sales_data` table.
-  2. A screenshot of the query result is saved as `recordcount.jpg`.
+  ![records](https://github.com/nir25aj/ssad/blob/my-new-branch/Data_Engineering_Project/OLTP/salesrows.PNG "records")
 
 ### Task 6: Create an Index
 
@@ -56,7 +56,7 @@ I am a data engineer at an e-commerce company. My task is to design a data platf
 - **Objective**: List all indexes created for the `sales_data` table.
 - **Steps**:
   1. I used the `SHOW INDEX` command to list all indexes for the `sales_data` table.
-  2. A screenshot of the indexes is saved as `indexes.jpg`.
+  ![indexes](https://github.com/nir25aj/ssad/blob/my-new-branch/Data_Engineering_Project/OLTP/listindexes.PNG"indexes")
 
 ### Task 8: Write a Bash Script to Export Data
 
