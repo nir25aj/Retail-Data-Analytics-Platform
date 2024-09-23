@@ -1,7 +1,10 @@
-# Retail Data Hub: End-to-End Data Engineering Platform
+# Retail Data Analytics Platform
 
 ## Project Overview
 This capstone project focuses on designing and building a comprehensive data platform for retail data analytics. The platform integrates OLTP (MySQL), NoSQL (MongoDB), and data warehouse systems (PostgreSQL, IBM DB2), automates ETL processes using Apache Airflow, performs big data analytics with Apache Spark and Hadoop, and generates business intelligence reports using IBM Cognos Analytics. Predictive sales forecasting is implemented using machine learning models.
+
+## Objective
+The main goal is to design and implement a robust data platform capable of handling large-scale retail data, integrating multiple databases, and using advanced analytics techniques to derive actionable insights for business needs.
 
 ## Tech Stack
 - **OLTP Databases**: MySQL
@@ -60,4 +63,9 @@ This capstone project focuses on designing and building a comprehensive data pla
 - Big data analytics using Spark and Hadoop for faster processing.
 - Business intelligence reporting with IBM Cognos Analytics.
 - Machine learning-driven predictive analytics.
+
+## Conclusion
+This project demonstrates a full-cycle data engineering workflow, from data ingestion and storage to big data processing and business intelligence reporting. The integration of machine learning models further enhances decision-making capabilities, making this platform a robust solution for handling retail analytics at scale.
+
+
 
