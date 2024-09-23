@@ -21,22 +21,20 @@ As a data engineer at an e-commerce company, I need to automate the process of s
 ### Task 1: Implement the `get_last_rowid()` Function
 I implemented the `get_last_rowid()` function to connect to the IBM DB2 data warehouse and retrieve the last row ID.
 
-- Screenshot: **get_last_rowid.jpg**
+-  ![last](https://github.com/nir25aj/ssad/blob/my-new-branch/Data_Engineering_Project/ETL%20and%20Data%20Pipelines/get_last_rowid.jpg "last")
 
 ### Task 2: Implement the `get_latest_records()` Function
 I implemented the `get_latest_records()` function to connect to the MySQL staging data warehouse and retrieve all records inserted after the last row ID.
 
-- Screenshot: **get_latest_records.jpg**
+- ![latest](https://github.com/nir25aj/ssad/blob/my-new-branch/Data_Engineering_Project/ETL%20and%20Data%20Pipelines/get_latest_records.JPG "latest")
 
 ### Task 3: Implement the `insert_records()` Function
 I implemented the `insert_records()` function to insert the retrieved records from the staging warehouse into the IBM DB2 production warehouse.
 
-- Screenshot: **insert_records.jpg**
+- ![insert](https://github.com/nir25aj/ssad/blob/my-new-branch/Data_Engineering_Project/ETL%20and%20Data%20Pipelines/insert_records.JPG "insert")
 
 ### Task 4: Test the Data Synchronization
 I ran the `automation.py` script to test if the data synchronization between the staging and production warehouses was successful.
-
-- Screenshot: **synchronization.jpg**
 
 ---
 
@@ -63,35 +61,28 @@ I created a DAG with the following arguments:
 - `start_date`: The start date of the pipeline.
 - `email`: My email for notifications.
 
-- Screenshot: **dag_args.jpg**
 
 ### Task 2: Define the DAG
 I defined a DAG named `process_web_log` that runs daily and added a description explaining the purpose of the DAG.
 
-- Screenshot: **dag_definition.jpg**
 
 ### Task 3: Create the `extract_data` Task
 I created an `extract_data` task that extracts the `ipaddress` field from the web server log file and saves it into a file named `extracted_data.txt`.
 
-- Screenshot: **extract_data.jpg**
 
 ### Task 4: Create the `transform_data` Task
 I created a `transform_data` task that filters out occurrences of IP address `198.46.149.143` from `extracted_data.txt` and saves the output into a file named `transformed_data.txt`.
 
-- Screenshot: **transform_data.jpg**
 
 ### Task 5: Create the `load_data` Task
 I created a `load_data` task that archives the `transformed_data.txt` file into a tar file named `weblog.tar`.
 
-- Screenshot: **load_data.jpg**
 
 ### Task 6: Define the Task Pipeline
 I defined the task pipeline as follows:
 - First task: `extract_data`
 - Second task: `transform_data`
 - Third task: `load_data`
-
-- Screenshot: **pipeline.jpg**
 
 ---
 
@@ -100,17 +91,14 @@ I defined the task pipeline as follows:
 ### Task 7: Submit the DAG
 I saved the DAG in a file named `process_web_log.py` and submitted it to Apache Airflow.
 
-- Screenshot: **submit_dag.jpg**
 
 ### Task 8: Unpause the DAG
 I unpaused the DAG to make it active in Airflow.
 
-- Screenshot: **unpause_dag.jpg**
 
 ### Task 9: Monitor the DAG
 I monitored the DAG run from the Airflow console to ensure everything was running smoothly.
 
-- Screenshot: **dag_runs.jpg**
 
 ---
 
